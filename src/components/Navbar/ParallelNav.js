@@ -8,19 +8,13 @@ function Navbar() {
       <nav className={styles.nav}>
         <ul className={styles.menu}>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/parallel-queries">Home</Link>
           </li>
           <li>
-            <Link to="/example">Basic</Link>
+            <Link to="/parallel-queries/manuel">Manuel Parallel Queries</Link>
           </li>
           <li>
-            <Link to="/clean-code">Clean Code</Link>
-          </li>
-          <li>
-            <Link to="/infinite">Infinite Queries</Link>
-          </li>
-          <li>
-            <Link to="/parallel-queries">Parallel Queries</Link>
+            <Link to="/parallel-queries/dynamic">Dynamic Parallel Queries</Link>
           </li>
         </ul>
       </nav>

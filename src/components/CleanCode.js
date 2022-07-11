@@ -3,7 +3,7 @@ import { useQuery } from "react-query";
 import { fetchExample } from "../api";
 
 function CleanCode() {
-  const { isLoading, error, data } = useQuery("fetching", fetchExample);
+  const { isLoading, error, data } = useQuery("fetching-2", fetchExample);
 
   if (isLoading) {
     return "Loading...";
