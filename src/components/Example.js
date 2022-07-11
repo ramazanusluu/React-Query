@@ -3,7 +3,7 @@ import { useQuery } from "react-query";
 
 function Example() {
   const { isLoading, error, data } = useQuery("fetching", () =>
-    fetch("https://jsonplaceholder.typicode.com/users").then((res) =>
+    fetch("https://jsonplaceholder.typicode.com/posts").then((res) =>
       res.json()
     )
   );
@@ -25,9 +25,9 @@ function Example() {
     <div>
       {data.map((item) => (
         <div key={item.id}>
-          <h4>
-            {item.id} - {item.name} - {item.username} - {item.email}
-          </h4>
+          <h5>Id : {item.id}</h5>
+          <h5>Title: {item.title}</h5>
+          <p>Body: {item.body}</p>
         </div>
       ))}
     </div>

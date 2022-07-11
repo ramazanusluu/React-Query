@@ -6,10 +6,20 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 //Gerekli import işlemi yapılır.
+import { ReactQueryDevtools } from "react-query/devtools";
+//React Query Devtools' kullanmak için gerekli olan import işlemi
 
-const queryClient = new QueryClient();
-//query client instance üret
-//*App Sarmala ve sonra
+//query client üret
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnMount: false,
+      refetchOnWindowFocus: false
+    },
+  },
+});
+//? Başka bir ekrana gidip geldiğimizde, sekme değiştirdiğimizde, sayfa içerisinde gezindiğimizde fetch etme işlemini istemiyorsak bu ayarı yapmalıyız.
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
@@ -17,6 +27,7 @@ root.render(
       <BrowserRouter>
         <App />
       </BrowserRouter>
+      <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   </>
 );
