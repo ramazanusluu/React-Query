@@ -4,6 +4,7 @@ import Example from "./components/Example";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import CleanCode from "./components/CleanCode";
+import Infinite from "./components/Infinite";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="example" element={<Example />} />
           <Route path="clean-code" element={<CleanCode />} />
+          <Route path="infinite" element={<Infinite />} />
         </Routes>
       </div>
     </div>

@@ -17,9 +17,11 @@ function CleanCode() {
     <div>
       {data.map((item) => (
         <div key={item.id}>
-          <h5>Id : {item.id}</h5>
-          <h5>Title: {item.title}</h5>
-          <p>Body: {item.body}</p>
+          <h5>Id: {item.id}</h5>
+          <h5>Name: {item.name}</h5>
+          <h5>Username: {item.username}</h5>
+          <h5>E-mail: {item.email}</h5>
+          <hr />
         </div>
       ))}
     </div>

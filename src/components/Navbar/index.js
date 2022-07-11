@@ -16,6 +16,9 @@ function Navbar() {
           <li>
             <Link to="/clean-code">Clean Code</Link>
           </li>
+          <li>
+            <Link to="/infinite">Infinite Queries</Link>
+          </li>
         </ul>
       </nav>
     </div>

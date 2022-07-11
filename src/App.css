@@ -1,3 +1,14 @@
 .App {
   text-align: center;
 }
+.button {
+  background-color: rgb(143, 188, 156);
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin: 20px;
+}
+.button:hover {
+  background-color: darkcyan;
+}
