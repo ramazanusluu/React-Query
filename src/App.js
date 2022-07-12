@@ -8,6 +8,8 @@ import Infinite from "./components/Infinite";
 import ParallelQueries from "./components/ParallelQueries";
 import Dynamic from "./components/ParallelQueries/Dynamic";
 import Manuel from "./components/ParallelQueries/Manuel";
+import QueryCancel from "./components/cancellation/QueryCancel";
+import Cancellation from "./components/cancellation";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
             element={<Dynamic users={[1, 3]} />}
           />
           <Route path="parallel-queries/manuel" element={<Manuel />} />
+          <Route path="cancellation" element={<Cancellation />} />
+          <Route path="query-cancel" element={<QueryCancel />} />
         </Routes>
       </div>
     </div>

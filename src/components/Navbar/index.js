@@ -22,6 +22,9 @@ function Navbar() {
           <li>
             <Link to="/parallel-queries">Parallel Queries</Link>
           </li>
+          <li>
+            <Link to="/cancellation">Query Cancellation</Link>
+          </li>
         </ul>
       </nav>
     </div>
